@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #79a37f;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li{
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 40px;
+    font-size: 20px;
+    transition: color 0.3s;
+    transition: font-size 0.3s;
+}
+
+nav ul li a:hover {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+}
+
+#home {
+    background-image: url(https://cdn.pixabay.com/photo/2016/01/13/14/41/cosmos-flowers-1138041_640.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.6em;
+    color: #ff839c;
+    text-shadow: #00000093 2px 3px 4px;
+}
+
+h1 {
+    padding-bottom: 30px;
+    text-shadow: #00000093 2px 3px 4px;
+}
+
+p {
+    color: #eb6681;
+}
+
+.cta-button {
+    margin-top: 60px;
+    background-color: #79a37f;
+    color: black;
+    padding: 15px 40px;
+    font-size: 18px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba (0,0, 0, 0.1);
+    transition: background-color 0.5s ease, transform 1s ease;
+}
+
+.cta-button:hover {
+    background-color: #58725c;
+}
+
+
+@media (max-width: 768px) {
+    nav {
+        padding: 30px;
+    }
+    nav ul li a{
+        font-size: 27px;
+    }
+    .cta-button {
+        padding: 26px;
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 27px;
+    }
+    nav ul li a:hover {
+        font-size: 35px;
+    }
+ }
+
+ @media (max-width: 1024px) { 
+    nav {
+        padding: 30px;
+    }
+    nav ul li a{
+        font-size: 30px;
+    }
+    h1 {
+        font-size: 70px;
+    }
+    .cta-button {
+        padding: 26px;
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 27px;
+    }
+    nav ul li a:hover {
+        font-size: 35px;
+    }
+} 
